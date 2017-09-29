@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Chrome Tablets",
+  "description": "Remove the anxiety with closing tabs and to forget information that one gathered",
+
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "View Chrome tablets"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "exclude_matches": ["https://*.google.com/*", "https://*.facebook.com/*"],
+      "css": [],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "activeTab",
+    "history",
+    "background",
+    "tabs",
+    "storage"
+  ]
+}
