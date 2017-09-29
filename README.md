@@ -29,3 +29,18 @@ Add some machine learning algorithms to keep the links relavant to this person a
 - Research if I can track chrome history, Answer is Yes
 https://chrome.google.com/webstore/detail/better-history/obciceimmggglbmelaidpjlmodcebijb?hl=en
 - Have a skeleton for a chrome plugin. Maybe use some from the opensource repo: https://github.com/better-history
+
+
+## Brainstorming
+
+10 AM
+Visualise history in different ways:
+- tree structures of linked pages (walked path / like a cross domain sitemap)
+- detection of code snippets
+- clustering based on keywords
+
+Steps:
+1. Actually collect some history and specify a data structure
+2. Collect some sample data and perform something on the data
+3. Implement it in the extension
+4. Visualise history
